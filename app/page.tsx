@@ -1,9 +1,8 @@
 import React from 'react'
+import Home from './components/pages/homePage'
 
 function page() {
-  return (
-    <div>page</div>
-  )
+  return <Home/>
 }
 
 export default page
