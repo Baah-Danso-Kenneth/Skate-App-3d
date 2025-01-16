@@ -1,23 +1,41 @@
 import type { Config } from "tailwindcss";
-import fluid, {extract} from 'fluid-tailwind';
+import fluid, { extract } from "fluid-tailwind";
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 
 const config: Config = {
-  content: [
+  content: {
+    files: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  extract,
-
+    ],
+    extract
+    }  ,
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "brand-blue": "#4876ff",
+        "brand-lime": "#d9f154",
+        "brand-navy": "#2e3192",
+        "brand-orange": "#ff7347",
+        "brand-pink": "#f7d0e9",
+        "brand-purple": "#692e54",
+        "brand-gray": "#fffdf9",
+      },
+      fontFamily: {
+        bowlby: [
+          'var(--font-bowlby)',
+          ...fontFamily.sans,
+        ],
+        dmMono: [
+          'var(--font-dmMono)',
+          ...fontFamily.sans,
+        ],
       },
     },
   },
   plugins: [fluid],
 };
+
 export default config;
