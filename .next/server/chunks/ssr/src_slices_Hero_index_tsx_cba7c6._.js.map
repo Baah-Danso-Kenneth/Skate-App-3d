@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/gee/bread/3d/Skate-App-3d/src/slices/Hero/index.tsx"],"sourcesContent":["import { Content } from \"@prismicio/client\";\nimport { SliceComponentProps } from \"@prismicio/react\";\n\n/**\n * Props for `Hero`.\n */\nexport type HeroProps = SliceComponentProps<Content.HeroSlice>;\n\n/**\n * Component for \"Hero\" Slices.\n */\nconst Hero = ({ slice }: HeroProps): JSX.Element => {\n  return (\n    <section\n      data-slice-type={slice.slice_type}\n      data-slice-variation={slice.variation}\n    >\n      Placeholder component for hero (variation: {slice.variation}) Slices\n    </section>\n  );\n};\n\nexport default Hero;\n"],"names":[],"mappings":";;;;;AAQA;;CAEC,GACD,MAAM,OAAO,CAAC,EAAE,KAAK,EAAa;IAChC,qBACE,8OAAC;QACC,mBAAiB,MAAM,UAAU;QACjC,wBAAsB,MAAM,SAAS;;YACtC;YAC6C,MAAM,SAAS;YAAC;;;;;;;AAGlE;uCAEe"}},
-    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
