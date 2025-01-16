@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\n  \"src/slices/index.ts -> ./Hero\": {\n    \"id\": \"src/slices/index.ts -> ./Hero\",\n    \"files\": [\n      \"static/chunks/_b96ddb._.js\",\n      \"static/chunks/src_slices_Hero_index_tsx_454d32._.js\"\n    ]\n  }\n}"
