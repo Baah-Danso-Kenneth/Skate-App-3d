@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import fluid, {extract} from 'fluid-tailwind';
+
 
 const config: Config = {
   content: [
@@ -6,6 +8,8 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  extract,
+
   theme: {
     extend: {
       colors: {
@@ -14,6 +18,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [fluid],
 };
 export default config;
