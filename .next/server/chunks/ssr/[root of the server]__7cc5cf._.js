@@ -103,9 +103,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$prismicio$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/prismicio.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$slices$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/slices/index.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$react$2f$dist$2f$SliceZone$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@prismicio/react/dist/SliceZone.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$client$2f$dist$2f$helpers$2f$isFilled$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__isFilled$3e$__ = __turbopack_import__("[project]/node_modules/@prismicio/client/dist/helpers/isFilled.js [app-rsc] (ecmascript) <export * as isFilled>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$client$2f$dist$2f$helpers$2f$asImageSrc$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@prismicio/client/dist/helpers/asImageSrc.js [app-rsc] (ecmascript)");
-;
 ;
 ;
 ;
@@ -127,14 +124,7 @@ async function generateMetadata() {
     const page = await client.getSingle("homepage");
     return {
         title: page.data.meta_title,
-        description: page.data.meta_description,
-        openGraph: {
-            title: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$client$2f$dist$2f$helpers$2f$isFilled$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__isFilled$3e$__["isFilled"].keyText(page.data.meta_title) ? page.data.meta_title : undefined,
-            description: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$client$2f$dist$2f$helpers$2f$isFilled$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__isFilled$3e$__["isFilled"].keyText(page.data.meta_description) ? page.data.meta_description : undefined,
-            images: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$client$2f$dist$2f$helpers$2f$isFilled$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__isFilled$3e$__["isFilled"].image(page.data.meta_image) ? [
-                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$prismicio$2f$client$2f$dist$2f$helpers$2f$asImageSrc$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["asImageSrc"])(page.data.meta_image)
-            ] : undefined
-        }
+        description: page.data.meta_description
     };
 }
 }}),
