@@ -1,31 +1,33 @@
-import clsx from "clsx";
+import Link from 'next/link'
+import React from 'react'
+import { ButtonLink } from './ButtonLink'
+import { Logo } from './Logo'
 
-type HeadingProps = {
-  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  size?: "xl" | "lg" | "md" | "sm" | "xs";
-  children: React.ReactNode;
-  className?: string;
-};
 
-export function Heading({
-  as: Comp = "h1",
-  className,
-  children,
-  size = "lg",
-}: HeadingProps) {
+
+export default function Header() {
   return (
-    <Comp
-      className={clsx(
-        "font-sans uppercase",
-        size === "xl" && "~text-4xl/8xl",
-        size === "lg" && "~text-4xl/7xl",
-        size === "md" && "~text-3xl/5xl",
-        size === "sm" && "~text-2xl/4xl",
-        size === "xs" && "~text-lg/xl",
-        className,
-      )}
-    >
-      {children}
-    </Comp>
-  );
+    <header className='header absolute left-0 right-0 top-0 z-50 ~h-32/48 ~px-4/6 md:h-32'>
+        <div className='mx-auto w-full grid max-w-6xl grid-cols-[auto,auto] items-center gap-6 md:grid-cols-[1fr,auto,1fr]'>
+            <Link href="/">
+            <Logo className='text-brand-purple ~h-12/20'/>
+            </Link>
+
+            <nav className='col-span-full  row-start-2 md:col-span-1 md:col-start-2 md:row-start-1'>
+                <ul className='flex flex-wrap items-center justify-center gap-8'>
+                    <li>Boards</li>
+                </ul>
+            </nav>
+
+            <div className='justify-self-end'>
+                <ButtonLink href='' icon='cart' color='purple'
+                aria-label="Cart(1)"
+                >
+                <span className=' md:hidden'>1</span>
+                <span className='hidden md:inline'>Cart(1)</span>
+                </ButtonLink>
+            </div>
+        </div>
+    </header>
+  )
 }
