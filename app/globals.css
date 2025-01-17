@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-texture{
+    background-image: url("/bg-texture.webp");
+}

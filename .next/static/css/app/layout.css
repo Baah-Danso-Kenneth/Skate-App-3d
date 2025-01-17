@@ -572,14 +572,18 @@ video {
   padding-top: /* not fluid from 2.5rem at 640px to 4rem at 1536px: Breakpoint and value units don't match */;
   padding-bottom: /* not fluid from 2.5rem at 640px to 4rem at 1536px: Breakpoint and value units don't match */;
 }
+
+.bg-texture{
+    background-image: url("/bg-");
+}
+
 .header+.\[\.header\+\&\]\:pt-44 {
   padding-top: 11rem;
 }
+
 @media (min-width: 768px) {
 
   .header+.\[\.header\+\&\]\:md\:pt-32 {
     padding-top: 8rem;
   }
 }
-
-
