@@ -1,19 +1,35 @@
 import type { Metadata } from "next";
+// import {Bowlby_One_SC, DM_Mono} from 'next/font/google'
 import {Bowlby_One_SC, DM_Mono} from 'next/font/google'
 
 import "./globals.css"
 
+// const bowlby = Bowlby_One_SC({
+//   variable: '--font-bowlby',
+//   weight:['400'],
+//   subsets: ['latin'],
+// })
+
+
+// const dmMono = DM_Mono({
+//   variable: '--font-dmMono',
+//   weight:['500'],
+//   subsets: ['latin'],
+// })
+
 const bowlby = Bowlby_One_SC({
-  variable: '--font-bowlby',
-  weight:['400'],
   subsets: ['latin'],
+  display: 'swap',
+  weight:'400',
+  variable: '--font-bowlby',
 })
 
 
 const dmMono = DM_Mono({
-  variable: '--font-dmMono',
-  weight:['500'],
   subsets: ['latin'],
+  display: 'swap',
+  weight:'500',
+  variable: '--font-dmMono',
 })
 
 export const metadata: Metadata = {
