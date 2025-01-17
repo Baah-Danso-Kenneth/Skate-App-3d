@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import fluid, { extract } from "fluid-tailwind";
+import fluid, { extract, screens, fontSize, FluidThemeConfig } from "fluid-tailwind";
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 
@@ -13,6 +13,11 @@ const config: Config = {
     extract
     }  ,
   theme: {
+    screens,
+    fontSize,
+    fluid: (({ theme }) => ({
+      defaultScreens: ['20rem', theme('screens.lg')]
+    })) satisfies FluidThemeConfig,
     extend: {
       colors: {
         "brand-blue": "#4876ff",
@@ -24,14 +29,8 @@ const config: Config = {
         "brand-gray": "#fffdf9",
       },
       fontFamily: {
-        bowlby: [
-          'var(--font-bowlby)',
-          ...fontFamily.sans,
-        ],
-        dmMono: [
-          'var(--font-dmMono)',
-          ...fontFamily.sans,
-        ],
+        sans: ['var(--font-bowlby)'],
+        mono: ['var(--font-dmMono)']
       },
     },
   },
