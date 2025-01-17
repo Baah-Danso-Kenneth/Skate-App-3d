@@ -1,5 +1,8 @@
 import React from 'react'
 import { Bounded } from '../../shared/Bounded'
+import { Heading } from '../../Heading'
+import Link from 'next/link'
+import { ButtonLink } from '../../ButtonLink'
 
 function HeroComponent() {
   return (
@@ -8,12 +11,26 @@ function HeroComponent() {
        h-dvh overflow-hidden
         bg-texture
         text-zinc-800'>
-        <div><h1 className='font-bowlby text-3xl'>Lorem ipsum dolor sit amet.</h1></div>
-        <div><h1 className='font-dmMono'>Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Praesentium explicabo fuga placeat totam sunt laborum alias eaque error dignissimos quia.</h1></div>
-        <div>
-            <button>skate board</button>
+
+      <div className='absolute inset-0  mx-auto mt-24 grid max-w-6xl grid-rows-[1fr,auto] place-items-end px-6 ~py-10/16'>
+        <Heading className='relative max-w-2xl place-self-start'>
+            <span >Escape the cul-de-sac.</span>
+          </Heading>
+
+          <div className="flex relative w-full items-center flex-col justify-between ~gap-2/4 lg:flex-row">
+
+          <div className='max-w-[45ch] font-semibold ~text-lg/xl'>
+            <p className='font-mono'>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Praesentium explicabo fuga placeat totam sunt laborum alias eaque error dignissimos quia.</p>
+          </div>
+
+       <ButtonLink href='#' icon='skateboard'>
+          skate board
+       </ButtonLink>
+
         </div>
+      </div>
+
     </Bounded>
   )
 }
