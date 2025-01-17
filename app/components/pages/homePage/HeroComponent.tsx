@@ -3,6 +3,8 @@ import { Bounded } from '../../shared/Bounded'
 import { Heading } from '../../Heading'
 import Link from 'next/link'
 import { ButtonLink } from '../../ButtonLink'
+import { WideLogo } from './WideLogo'
+import { TallLogo } from './TallLogo'
 
 function HeroComponent() {
   return (
@@ -12,8 +14,13 @@ function HeroComponent() {
         bg-texture
         text-zinc-800'>
 
-      <div className='absolute inset-0  mx-auto mt-24 grid max-w-6xl grid-rows-[1fr,auto] place-items-end px-6 ~py-10/16'>
-        <Heading className='relative max-w-2xl place-self-start'>
+          <div className='absolute inset-0 flex items-center pt-20'>
+            <WideLogo className='w-full text-brand-purple hidden opacity-20 mix-blend-multiply lg:block'/>
+            <TallLogo className='w-full text-brand-purple opacity-20 mix-blend-multiply lg:hidden'/>
+          </div>
+
+      <div className='absolute inset-0  mx-auto mt-10 grid max-w-6xl grid-rows-[1fr,auto] place-items-end px-6 ~py-10/16'>
+        <Heading className='relative max-w-2xl place-self-start '>
             Escape the cul-de-sac.
           </Heading>
 
