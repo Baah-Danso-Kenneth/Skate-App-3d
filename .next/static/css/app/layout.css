@@ -556,9 +556,15 @@ video {
 .font-dmMono {
   font-family: var(--font-dmMono), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .text-zinc-800 {
   --tw-text-opacity: 1;
@@ -568,13 +574,36 @@ video {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.\~text-2xl\/4xl {
+  font-size: /* not fluid type from 1.5rem at 640px to 2.25rem at 1536px: Breakpoint and value units don't match */;
+  line-height: /* not fluid from 2rem at 640px to 2.5rem at 1536px: Breakpoint and value units don't match */;
+}
+.\~text-3xl\/5xl {
+  font-size: /* not fluid type from 1.875rem at 640px to 3rem at 1536px: Breakpoint and value units don't match */;
+  line-height: /* error - End value `1` is not a length */;
+}
+.\~text-4xl\/7xl {
+  font-size: /* not fluid type from 2.25rem at 640px to 4.5rem at 1536px: Breakpoint and value units don't match */;
+  line-height: /* error - End value `1` is not a length */;
+}
+.\~text-4xl\/8xl {
+  font-size: /* not fluid type from 2.25rem at 640px to 6rem at 1536px: Breakpoint and value units don't match */;
+  line-height: /* error - End value `1` is not a length */;
+}
+.\~text-lg\/xl {
+  font-size: /* not fluid type from 1.125rem at 640px to 1.25rem at 1536px: Breakpoint and value units don't match */;
+  line-height: 1.75rem;
+}
 .\~py-10\/16 {
   padding-top: /* not fluid from 2.5rem at 640px to 4rem at 1536px: Breakpoint and value units don't match */;
   padding-bottom: /* not fluid from 2.5rem at 640px to 4rem at 1536px: Breakpoint and value units don't match */;
 }
 
 .bg-texture{
-    background-image: url("/bg-");
+    background-image: url("/images/bg-texture.webp");
+    background-size: 720px 460px;
+    background-repeat: repeat;
+    background-position: center;
 }
 
 .header+.\[\.header\+\&\]\:pt-44 {
