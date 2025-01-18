@@ -3,6 +3,7 @@ import React from 'react'
 import { ButtonLink } from './ButtonLink'
 import { Logo } from './Logo'
 
+import {navLinks} from '../data';
 
 
 export default function Header() {
@@ -14,8 +15,12 @@ export default function Header() {
             </Link>
 
             <nav className='col-span-full  row-start-2 md:col-span-1 md:col-start-2 md:row-start-1'>
-                <ul className='flex flex-wrap items-center justify-center gap-8'>
-                    <li>Boards</li>
+                <ul className='flex capitalize font-medium font-mono flex-wrap items-center justify-center gap-8'>
+                     {navLinks.map(({name,href},index)=>(
+                        <Link href={href} key={index}>
+                          {name}
+                        </Link>
+                     ))}
                 </ul>
             </nav>
 
