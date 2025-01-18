@@ -26,7 +26,7 @@ export default function Header() {
 
             <div className='justify-self-end'>
                 <ButtonLink href='' icon='cart' color='purple'
-                aria-label="Cart(1)"
+                aria-label="Cart(1)" className='font-mono'
                 >
                 <span className=' md:hidden'>1</span>
                 <span className='hidden md:inline'>Cart(1)</span>
