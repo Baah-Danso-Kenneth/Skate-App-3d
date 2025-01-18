@@ -1,53 +1,31 @@
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Bowlby_One_SC","arguments":[{"subsets":["latin"],"display":"swap","weight":"400","variable":"--font-bowlby"}],"variableName":"bowlby"} ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* latin-ext */
 @font-face {
-  font-family: '__Bowlby_One_SC_d71059';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/575ba2a6e3861799-s.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-family: '__Bowlby_One_SC_Fallback_7db0ff';
+  src: local("Arial");
+  ascent-override:82.55%;
+  descent-override:32.17%;
+  line-gap-override:0.00%;
+  size-adjust:132.97%;
+}@font-face {font-family: '__Bowlby_One_SC_Fallback_Fallback_7db0ff';src: local("Arial");ascent-override: 82.55%;descent-override: 32.17%;line-gap-override: 0.00%;size-adjust: 132.97%
+}.__className_7db0ff {font-family: '__Bowlby_One_SC_Fallback_7db0ff', '__Bowlby_One_SC_Fallback_Fallback_7db0ff';font-weight: 400;font-style: normal
+}.__variable_7db0ff {--font-bowlby: '__Bowlby_One_SC_Fallback_7db0ff', '__Bowlby_One_SC_Fallback_Fallback_7db0ff'
 }
-/* latin */
-@font-face {
-  font-family: '__Bowlby_One_SC_d71059';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/_next/static/media/b78019ec8d51ad2c-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Bowlby_One_SC_Fallback_d71059';src: local("Arial");ascent-override: 82.55%;descent-override: 32.17%;line-gap-override: 0.00%;size-adjust: 132.97%
-}.__className_d71059 {font-family: '__Bowlby_One_SC_d71059', '__Bowlby_One_SC_Fallback_d71059';font-weight: 400;font-style: normal
-}.__variable_d71059 {--font-bowlby: '__Bowlby_One_SC_d71059', '__Bowlby_One_SC_Fallback_d71059'
-}
-
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"DM_Mono","arguments":[{"subsets":["latin"],"display":"swap","weight":"500","variable":"--font-dmMono"}],"variableName":"dmMono"} ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* latin-ext */
 @font-face {
-  font-family: '__DM_Mono_2b7b27';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/f6f4688957eedbfb-s.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-family: '__DM_Mono_Fallback_3366a3';
+  src: local("Arial");
+  ascent-override:73.71%;
+  descent-override:23.03%;
+  line-gap-override:0.00%;
+  size-adjust:134.59%;
+}@font-face {font-family: '__DM_Mono_Fallback_Fallback_3366a3';src: local("Arial");ascent-override: 73.71%;descent-override: 23.03%;line-gap-override: 0.00%;size-adjust: 134.59%
+}.__className_3366a3 {font-family: '__DM_Mono_Fallback_3366a3', '__DM_Mono_Fallback_Fallback_3366a3';font-weight: 500;font-style: normal
+}.__variable_3366a3 {--font-dmMono: '__DM_Mono_Fallback_3366a3', '__DM_Mono_Fallback_Fallback_3366a3'
 }
-/* latin */
-@font-face {
-  font-family: '__DM_Mono_2b7b27';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/_next/static/media/ce9b84dce7581e2b-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__DM_Mono_Fallback_2b7b27';src: local("Arial");ascent-override: 73.71%;descent-override: 23.03%;line-gap-override: 0.00%;size-adjust: 134.59%
-}.__className_2b7b27 {font-family: '__DM_Mono_2b7b27', '__DM_Mono_Fallback_2b7b27';font-weight: 500;font-style: normal
-}.__variable_2b7b27 {--font-dmMono: '__DM_Mono_2b7b27', '__DM_Mono_Fallback_2b7b27'
-}
-
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
@@ -563,8 +541,17 @@ video {
 .top-0 {
   top: 0px;
 }
+.left-4 {
+  left: 1rem;
+}
+.right-4 {
+  right: 1rem;
+}
 .z-50 {
   z-index: 50;
+}
+.z-10 {
+  z-index: 10;
 }
 .col-span-full {
   grid-column: 1 / -1;
@@ -579,6 +566,14 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.-mx-8 {
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -621,6 +616,9 @@ video {
 .w-px {
   width: 1px;
 }
+.w-\[58\%\] {
+  width: 58%;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -629,6 +627,15 @@ video {
 }
 .max-w-\[45ch\] {
   max-width: 45ch;
+}
+.max-w-72 {
+  max-width: 18rem;
+}
+.origin-top {
+  transform-origin: top;
+}
+.transform-gpu {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 @keyframes squiggle {
 
@@ -682,9 +689,6 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.gap-1 {
-  gap: 0.25rem;
-}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -715,6 +719,9 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.border-4 {
+  border-width: 4px;
+}
 .bg-black\/25 {
   background-color: rgb(0 0 0 / 0.25);
 }
@@ -725,6 +732,9 @@ video {
 .bg-brand-pink {
   --tw-bg-opacity: 1;
   background-color: rgb(247 208 233 / var(--tw-bg-opacity));
+}
+.bg-black\/40 {
+  background-color: rgb(0 0 0 / 0.4);
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -759,6 +769,9 @@ video {
 .bg-\[length\:100\%_400\%\] {
   background-size: 100% 400%;
 }
+.stroke-2 {
+  stroke-width: 2;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -771,8 +784,19 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .text-center {
   text-align: center;
@@ -806,6 +830,9 @@ video {
 .capitalize {
   text-transform: capitalize;
 }
+.leading-tight {
+  line-height: 1.25;
+}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -826,12 +853,23 @@ video {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
 }
+.text-stone-200 {
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
+}
+.text-stone-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity));
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .opacity-20 {
   opacity: 0.2;
+}
+.opacity-0 {
+  opacity: 0;
 }
 .mix-blend-multiply {
   mix-blend-mode: multiply;
@@ -849,8 +887,30 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-300 {
   transition-duration: 300ms;
+}
+.duration-200 {
+  transition-duration: 200ms;
+}
+.duration-0 {
+  transition-duration: 0s;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .\~text-2xl\/4xl {
   font-size: clamp(1.5rem,1.16rem + 1.7vw,2.25rem)/* fluid type from 1.5rem at 20rem to 2.25rem at 64rem */;
@@ -880,6 +940,7 @@ video {
   font-size: clamp(0.875rem,0.591rem + 1.42vw,1.5rem)/* fluid type from 0.875rem at 20rem to 1.5rem at 64rem */;
   line-height: clamp(1.25rem,0.91rem + 1.7vw,2rem)/* fluid from 1.25rem at 20rem to 2rem at 64rem */;
 }
+.\~mb-1 /* error - Missing end value */ {}
 .\~mb-4\/6 {
   margin-bottom: clamp(1rem,0.77rem + 1.14vw,1.5rem)/* fluid from 1rem at 20rem to 1.5rem at 64rem */;
 }
@@ -1000,6 +1061,24 @@ video {
 .group:hover .group-hover\:-rotate-\[25deg\] {
   --tw-rotate: -25deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+
+.group:hover .group-hover\:scale-150 {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+
+.group:hover .group-hover\:text-stone-400 {
+  --tw-text-opacity: 1;
+  color: rgb(168 162 158 / var(--tw-text-opacity));
+}
+
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 
