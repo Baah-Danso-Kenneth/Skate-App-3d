@@ -35,7 +35,7 @@ function ProductGrid() {
 
          <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4'>
           {skateBoards.map(item=>(
-            <SkateBoardContent item={item}/>
+            <SkateBoardContent item={item} key={item.name}/>
           ))}
          </div>
         
