@@ -6,6 +6,7 @@ import FirstLayer from './FirstLayer'
 import SecondLayer from './SecondLayer'
 import ThirdLayer from './ThirdLayer'
 import FourthLayer from './FourthLayer'
+import VideoSection from './VideoSection'
 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
         <SecondLayer/>
         <ThirdLayer/>
         <FourthLayer/>
+        <VideoSection/>
         </div>
   )
 }
