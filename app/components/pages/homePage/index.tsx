@@ -7,6 +7,7 @@ import SecondLayer from './SecondLayer'
 import ThirdLayer from './ThirdLayer'
 import FourthLayer from './FourthLayer'
 import VideoSection from './VideoSection'
+import TheTeam from './TheTeam'
 
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
         <ThirdLayer/>
         <FourthLayer/>
         <VideoSection/>
+        <TheTeam/>
         </div>
   )
 }
